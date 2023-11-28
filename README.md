@@ -1,7 +1,5 @@
-<!DOCTYPE html>
 <html>
 <head>
-    
 </head>
 <body>
     <header>
@@ -24,3 +22,4 @@
     </footer>
 </body>
 </html>
+theme: jekyll-theme-SuchoffPHYS
