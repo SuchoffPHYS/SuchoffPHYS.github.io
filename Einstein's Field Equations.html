@@ -12,12 +12,12 @@
 \begin{equation}
 \vec e_{\lambda}\Gamma_{\mu\nu}^{\lambda}=\partial_{\mu}\vec e_{\nu}
 \end{equation}
-where \(\vec e_{\lambda}\) are the basis vectors and $\Gamma_{\mu\nu}^{\lambda}$ are the Christoffel symbols.
+where \(\vec e_{\lambda}\) are the basis vectors and \(\Gamma_{\mu\nu}^{\lambda}\) are the Christoffel symbols.
 We can use the definition of the covariant derivative to express the partial derivative of the basis vectors in terms of the Christoffel symbols:
 \begin{equation}
 \partial_{\mu}\vec e_{\nu}=\nabla_{\mu}\vec e_{\nu}-\Gamma_{\mu\nu}^{\lambda}\vec e_{\lambda}
 \end{equation}
-where $\nabla$ is the covariant derivative.
+where \(\nabla\) is the covariant derivative.
 Substituting this expression into the original equation, we get:
 \begin{equation}
 \vec e_{\lambda}\Gamma_{\mu\nu}^{\lambda}=\nabla_{\mu}\vec e_{\nu}-\Gamma_{\mu\nu}^{\lambda}\vec e_{\lambda}
@@ -28,25 +28,25 @@ Rearranging terms, we obtain:
 \end{equation}
 This equation expresses the Christoffel symbols in terms of the basis vectors and their derivatives (i.e., the covariant derivative of the basis vectors).
 Using the metric tensor, we can relate the basis vectors and their derivatives to the Christoffel symbols:
-$\vec e_{\mu}=g_{\mu\nu}\vec e^{\nu}, \quad \nabla_{\mu}\vec e_{\nu}=\partial_{\mu}\vec e_{\nu}+\Gamma_{\mu\nu}^{\lambda}\vec e_{\lambda}$\\
-where $g_{\mu\nu}$ is the metric tensor, and $\vec e^{\nu}$ are the components of the dual basis.
+\(\vec e_{\mu}=g_{\mu\nu}\vec e^{\nu}, \quad \nabla_{\mu}\vec e_{\nu}=\partial_{\mu}\vec e_{\nu}+\Gamma_{\mu\nu}^{\lambda}\vec e_{\lambda}\)\\
+where \(g_{\mu\nu}\) is the metric tensor, and \(\vec e^{\nu}\) are the components of the dual basis.
 Substituting these expressions into the previous equation, we get:
 \begin{equation}
 \Gamma_{\mu\nu}^{\lambda}=\frac{1}{2}g^{\lambda\sigma}\left(\partial_{\mu}g_{\nu\sigma}+\partial_{\nu}g_{\mu\sigma}-\partial_{\sigma}g_{\mu\nu}\right)
 \end{equation}
 This final equation expresses the Christoffel symbols in terms of the metric tensor and its derivatives.
 
-In summary, we started with the equation $\vec e_{\lambda}\Gamma_{\mu\nu}^{\lambda}=\partial_{\mu}\vec e_{\nu}$, and used the definition of the covariant derivative, the metric tensor, and the dual basis to arrive at the final expression for the Christoffel symbols in terms of the metric.
+In summary, we started with the equation \(\vec e_{\lambda}\Gamma_{\mu\nu}^{\lambda}=\partial_{\mu}\vec e_{\nu}\), and used the definition of the covariant derivative, the metric tensor, and the dual basis to arrive at the final expression for the Christoffel symbols in terms of the metric.
 \section{Contraction}
 To obtain the contracted form of the Christoffel symbols, start by using the property of the metric tensor that its inverse is the same as its contravariant components. Which looks like:\\
-$g^{\mu\nu}g_{\nu\lambda}=\delta^{\mu}_{\lambda}$
-where $\delta^{\mu}{\lambda}$ is the Kronecker delta function.
+\(g^{\mu\nu}g_{\nu\lambda}=\delta^{\mu}_{\lambda}\)
+where \(\delta^{\mu}{\lambda}\) is the Kronecker delta function.
 The end goal is to get this equation:
 \begin{equation}
 \Gamma_{\mu\lambda}^{\lambda}=\frac{1}{2}g^{\lambda\sigma}(\partial_{\mu}g_{\lambda\sigma}+\partial_{\lambda}g_{\mu\sigma}-\partial_{\sigma}g_{\mu\lambda})
 \end{equation}
-Firstly, use the Einstein summation convention and then sum over the repeated index $\nu$ in the expression for the Christoffel symbols:\\
-$\Gamma_{\mu\lambda}^{\lambda}=g^{\lambda\nu}\Gamma_{\mu\nu}^{\lambda}$\\
+Firstly, use the Einstein summation convention and then sum over the repeated index \(\nu\) in the expression for the Christoffel symbols:\\
+\(\Gamma_{\mu\lambda}^{\lambda}=g^{\lambda\nu}\Gamma_{\mu\nu}^{\lambda}\)\\
 Substitute in the expression for the Christoffel symbols in terms of the metric tensor:
 \begin{equation}
 \Gamma_{\mu\lambda}^{\lambda}=\frac{1}{2}g^{\lambda\nu}(\partial_\mu g_{\nu\lambda}+\partial_\nu g_{\mu\lambda}-\partial_{\lambda} g_{\mu\nu})
@@ -59,7 +59,7 @@ to simplify the expression:
 \begin{equation}
 \Gamma_{\mu\lambda}^{\lambda}=\frac{1}{2}\delta^{\nu\sigma}(\partial_\mu g_{\nu\sigma}+\partial_{\nu}g_{\mu\sigma}-\partial_{\sigma}g_{\mu\nu})
 \end{equation}
-We can, relabel the dummy indices $\nu$ and $\sigma$ to get:
+We can, relabel the dummy indices \(\nu\) and \(\sigma\) to get:
 \begin{equation}
     \Gamma_{\mu\lambda}^{\lambda}=\frac{1}{2}(\partial_\mu g_{\nu\sigma}+\partial_\nu g_{\mu\sigma}-\partial_{\sigma}g_{\mu\nu})g^{\nu\sigma}
 \end{equation}
@@ -67,11 +67,11 @@ From this, we can use the property
 \begin{equation}
     g^{\nu\sigma}g_{\nu\sigma}=n
 \end{equation}
-where $n$ is the dimension of the manifold, to get the contracted form:
+where \(n\) is the dimension of the manifold, to get the contracted form:
 \begin{equation}
 \Gamma_{\mu\lambda}^{\lambda}=\frac{1}{2n}(\partial_\mu g_{\nu\sigma}+\partial_{\nu}g_{\mu\sigma}-\partial_\sigma g_{\mu\nu})g^{\nu\sigma}.
 \end{equation}
 This expression gives the contracted form of the Christoffel symbols in terms of the metric tensor.
-Note that in the contracted form, the index $\lambda$ is contracted, which means that it does not appear in the final expression. This is useful for calculations because it reduces the number of indices that need to be kept track of.</p>
+Note that in the contracted form, the index \(\lambda\) is contracted, which means that it does not appear in the final expression. This is useful for calculations because it reduces the number of indices that need to be kept track of.</p>
 </body>
 </html>
