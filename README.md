@@ -1,6 +1,4 @@
 <html>
-<head>
-</head>
 <body>
     <header>
         <h1>The Universe: Theoretical Physics and Mathematics</h1>
