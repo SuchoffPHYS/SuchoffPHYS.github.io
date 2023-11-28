@@ -9,8 +9,7 @@
     </header>
     <main>
         <section>
-            <h2>About</h2>
-            <p>This is a simple website made with HTML.</p>
+            <h2><a href="about.html">About</a></h2>
         </section>
         <section>
             <h2>Contact</h2>
