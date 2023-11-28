@@ -4,7 +4,6 @@
 <body>
     <header>
         <h1>The Universe: Theoretical Physics and Mathematics</h1>
-        <h2>and an exploration in my own theories in theoretical physics</h2>
     </header>
     <main>
         <section>
@@ -15,7 +14,7 @@
         </section>
         <section>
             <h2>Contact</h2>
-            <p>Email me at: <a href="mailto:suchoffbenjamin44@gmail.com">suchoffbenjamin44@gmail.com or benjaminsuchoff@unm.edu</a></p>
+            <p>Email me at: <a href="mailto:suchoffbenjamin44@gmail.com">suchoffbenjamin44@gmail.com</a> or <a href="mailto:benjaminsuchoff@unm.edu">benjaminsuchoff@unm.edu</a></p>
         </section>
     </main>
     <footer>
