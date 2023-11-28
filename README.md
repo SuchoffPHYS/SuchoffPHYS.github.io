@@ -9,6 +9,9 @@
     </header>
     <main>
         <section>
+            <h2><a href="home.html">Home</a></h2>
+        </section>
+        <section>
             <h2><a href="about.html">About</a></h2>
         </section>
         <section>
