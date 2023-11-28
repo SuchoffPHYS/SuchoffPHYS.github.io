@@ -1,7 +1,8 @@
 <html>
-<head>
+<!-- <head>
     <title>The Universe: Theoretical Physics and Mathematics</title>
-</head>
+</head> 
+-->
 <body>
     <header>
         <h1>The Universe: Theoretical Physics and Mathematics</h1>
