@@ -14,7 +14,7 @@
         </section>
         <section>
             <h2>Contact</h2>
-            <p>Email me at: <a href="mailto:example@example.com">example@example.com</a></p>
+            <p>Email me at: <a href="mailto:suchoffbenjamin44@gmail.com">suchoffbenjamin44@gmail.com or benjaminsuchoff@unm.edu</a></p>
         </section>
     </main>
     <footer>
@@ -22,4 +22,4 @@
     </footer>
 </body>
 </html>
-theme: jekyll-theme-SuchoffPHYS
+
