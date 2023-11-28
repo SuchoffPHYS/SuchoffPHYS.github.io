@@ -3,7 +3,8 @@
 </head>
 <body>
     <header>
-        <h1>Welcome to My Simple Website!</h1>
+        <h1>The Universe: Theoretical Physics and Mathematics</h1>
+        <h2>and an exploration in my own theories in theoretical physics</h2>
     </header>
     <main>
         <section>
@@ -18,7 +19,7 @@
         </section>
     </main>
     <footer>
-        <p>© 2023 My Simple Website</p>
+        <p>© 2023 Benjamin A. Suchoff: Physics and Mathematics</p>
     </footer>
 </body>
 </html>
