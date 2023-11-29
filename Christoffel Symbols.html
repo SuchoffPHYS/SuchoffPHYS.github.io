@@ -1,1 +1,84 @@
-C
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page with LaTeX</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+  <h1>Christoffel Symbols</h1>
+  <p>Christoffel symbols are mathematical objects that arise in the context of the Levi-Civita connection, which is a way of defining a notion of parallel transport in a smooth manifold. They represent the connection coefficients of this connection and can be used to study changes in basis vectors for a given coordinate system. This means that they provide a way to measure how the basis vectors change as one moves from one point to another on a manifold. In other words, the Levi-Civita connection and Christoffel symbols are related but not exactly the same concepts in the context of differential geometry. The Christoffel symbols are the components of the Levi-Civita connection with respect to a particular coordinate system. They encode geometric information about the manifold and are used to calculate the covariant derivative of tensors. In essence, the Christoffel symbols arise naturally when expressing the Levi-Civita connection in terms of a coordinate basis.
+
+In addition to their mathematical significance, Christoffel symbols also have physical meaning. In a sense, they could be viewed  to describe “fictitious forces” that arise in non-inertial reference frames. These forces arise because the coordinates that are used to describe the motion of objects in a non-inertial frame are themselves changing with time, and the Christoffel symbols describe how these changes affect the motion of objects. Moreover, the “fictitious forces” are forces that appear to act on objects in a non-inertial reference frame, but are not real forces that result from interactions with other objects. They may also be called pseudo-forces or inertial forces. For example, when a person is in a car that is accelerating, they feel a force pushing them back against the seat. This force is not caused by any physical contact with the seat, but by the fact that the person’s inertia resists the change in motion of the car. Similarly, when a person is in a rotating frame, such as a merry-go-round, they feel a force pushing them outward from the center. This force is not caused by any physical contact with the ground, but by the fact that the person’s inertia resists the change in direction of the rotation.
+Therefore, that is just a glimpse as to why Christoffel symbols are important both in mathematics and physics.
+
+Imagine you are driving on a curvy road in a car, and you have a device that measures the acceleration of the car in different directions. As you turn the car, the device shows that there is an acceleration force acting on it in a direction perpendicular to the turn. This may seem strange, as you know that there is no external force acting on the car in that direction. However, the device is measuring the acceleration relative to the car, which is a non-inertial reference frame. This means that the perceived force is actually a result of your reference frame not being inertial. In other words, the car is not at rest or moving at a constant velocity in a straight line.
+This is similar to the concept of the Christoffel symbols in General Relativity. In curved spacetime, we can define a coordinate system that describes the curvature, but this coordinate system is only valid in an inertial reference frame. When viewed from a non-inertial reference frame, the curvature of spacetime gives rise to “fictitious forces” that are represented by the Christoffel symbols.
+
+The Christoffel symbols are like the acceleration force acting on the car in the perpendicular direction when turning. They represent a perceived force that arises due to the curvature of spacetime when viewed from a non-inertial reference frame. This fictitious force is not actually there, but rather it is a result of the curvature of spacetime and the observer's reference frame.
+
+Now, suppose you are standing in a large field and you want to describe the location of different objects in that field. To do this, you might use a coordinate system, like a grid or a map, where each point in the field is assigned a unique set of coordinates. To understand the concept of Christoffel symbols in a more mathematical way, note that in general relativity, we often work with a curved spacetime, which can be described using a set of coordinates. However, these coordinates are not absolute but rather depend on the observer's reference frame. This means that different observers may assign different coordinates to the same point in spacetime.
+
+Now assume that you are standing on a spinning platform in the same field. As the platform rotates, the coordinates you assigned to the objects in the field will change, since the platform is itself moving. This means that the location of objects will appear to change even though they are actually staying in the same place. To make matters more complicated, the basis vectors of the coordinate system also change as we move from point to point in curved spacetime. This means that the usual rules of calculus that we are used to working within flat, Euclidean space no longer apply. To account for this, we introduce the concept of a covariant derivative, which measures how a vector changes as we move along a curve in spacetime.
+
+In other words, Christoffel symbols allow you to "correct" your coordinate system just so that it accurately describes the location of objects on the rotating platform. Just as a person on a spinning platform might feel like they are being pulled outward due to the centrifugal force of the platform's motion, the Christoffel symbols represent a similar pull on the basis of vectors of the coordinate system due to the motion of the platform. After this, the Christoffel symbols then come into play when we try to calculate the covariant derivative of a vector. The reason for this is quite simple: they represent the “connection coefficients” that relate the covariant derivative of a vector to its partial derivatives with respect to the coordinates. In other words, they allow us to take into account the fact that the basis vectors are changing as we move along a curve, and to account for the non-Euclidean nature of spacetime (it's more realistic).
+
+In expansion, once one specifies a certain coordinate system on the manifold, the covariant derivative can then be fully expressed through sets of connection coefficients which is another term for Christoffel symbols. Once completed, these connection coefficients may be calculated by the use of the metric of that given manifold. Similar to the analogy of correcting the motion on the moving platform, the Christoffel symbols are used as corrections to an ordinary derivative, because of the usage of a curved manifold or coordinate system. To express this mathematically, the definition of the Levi-Civita connection is given as:
+\begin{equation}
+    \nabla_{\mu}=\partial_{\mu} +\Gamma^{\lambda}_{\mu\nu}
+\end{equation}
+From this equation, the \(\nabla_\mu\) represents the Levi-Civita connection, which in effect connects near tangent spaces, and defines a corrected idea of the derivative in arbitrary coordinates or manifolds. Moreover, the \(\partial_\mu\) represents the ordinary derivative, and lastly the \(\Gamma_{\mu\nu}^{\lambda}\) represents a correction term called the Christoffel symbol.
+
+<h2>Mathematical Correlation</h2>
+Geometrically, the Christoffel symbols are defined as the derivatives of basis vectors, which can be shown as:
+\begin{equation}
+    \Gamma_{\mu\nu}^{\lambda}=\frac{\partial \vec e_{\mu}}{\partial x^{\nu}}\cdot \vec e^{\lambda}
+\end{equation}
+The \(\frac{\partial \vec e_{\mu}}{\partial x^{\nu}}\) represents the amount the basis vector \(e_\mu\) changes as we move along the \(x^\nu\) coordinate. The \(\cdot \vec e^{\lambda}\) represents the dot product, which describes how much this derivative (change in \(e_\mu\) along \(x^\nu\) and the basis vector \(e^\lambda\) overlap. And of course, \(\Gamma_{\mu\nu}^{\lambda}\), the Christoffel symbol, describes the amount of change in the basis vector \(e_\mu\) with respect to the \(x^\nu\)-coordinate occurs in the direction of \(e^\lambda\) (I cannot stress this enough).
+
+One may also take the derivative of a basis vector, which then could be written for the Christoffel symbols to represent different components of a newly formed vector:
+\begin{equation}
+    \Gamma_{\mu\nu}^{\lambda}=\vec{e}^{\lambda}\cdot\partial_{\nu}\vec{e}_{\mu}\\
+    \Rightarrow\\\partial_{\nu}\vec{e}_{\mu}=\Gamma_{\mu\nu}^{\lambda}\vec{e}_{\lambda}
+\end{equation}
+which is obtained by multiplying \(e_\lambda\) on both sides and by the use of the definition where \(e^{\lambda}e_{\lambda}=1\)\\
+Next, because it is a summation index, it is apparent one must sum over the index \(\lambda\), where it will run from 0 to 3 for simplicity:
+\begin{equation}
+\partial_{\nu}\vec{e}_{\mu}=\Gamma_{\mu\nu}^0\vec{e}_0+\Gamma_{\mu\nu}^1\vec{e}_1+\Gamma_{\mu\nu}^2\vec{e}_2+\Gamma_{\mu\nu}^3\vec{e}_3.
+\end{equation}
+Now, to represent any vector, we can use a combination of basis vectors and coefficients, which are known as vector components. This can be observed on the right-hand side. The Christoffel symbols signify different components of a vector, which are the components of the vector \(\partial_{\nu}e_{\mu}\)
+
+Importantly, the Christoffel symbols are known as connection coefficients because they are coefficients or components of the basis vectors for the derivative vector. The important point to note is that the Christoffel symbols show how the basis vectors change within a specific Riemannian manifold. Additionally, they also represent the changes in basis vectors within an arbitrary coordinate system in Euclidean space.
+
+<h2>Proofs & Definitions</h2>
+In the study of differential geometry, Christoffel symbols play a fundamental role in understanding the geometry of curved spaces. They provide a way to describe the connection between tangent spaces at different points on a manifold.
+
+    Let \(M\) be a smooth manifold, and let \(\nabla\) be a connection on \(M\). The Christoffel symbols, denoted by \(\Gamma_{ij}^k\), represent the components of the connection in a coordinate basis. They are defined as:
+    \begin{equation}
+        \Gamma_{ij}^k = \frac{1}{2} g^{kl} \left(\frac{\partial g_{il}}{\partial x^j} + \frac{\partial g_{lj}}{\partial x^i} - \frac{\partial g_{ij}}{\partial x^l}\right),
+    \end{equation}
+    where \(g_{ij}\) are the components of the metric tensor and \(g^{kl}\) are the components of the inverse metric tensor.
+
+SMALLER HEADER Properties
+Christoffel symbols possess several important properties that make them useful in the study of differential geometry. Here is one key property below.
+\begin{lemma}
+    The Christoffel symbols satisfy the symmetry property:
+    \begin{equation}
+        \Gamma_{ij}^k = \Gamma_{ji}^k.
+    \end{equation}
+\end{lemma}
+\begin{proof}
+    To prove the symmetry property, we start with the definition of the Christoffel symbols:
+    \begin{equation}
+        \Gamma_{ij}^k = \frac{1}{2} g^{kl} \left(\frac{\partial g_{il}}{\partial x^j} + \frac{\partial g_{lj}}{\partial x^i} - \frac{\partial g_{ij}}{\partial x^l}\right).
+    \end{equation}
+    By interchanging the indices \(i\) and \(j\) in the above equation, we have:
+    \begin{equation}
+        \Gamma_{ji}^k = \frac{1}{2} g^{kl} \left(\frac{\partial g_{jl}}{\partial x^i} + \frac{\partial g_{li}}{\partial x^j} - \frac{\partial g_{ij}}{\partial x^l}\right).
+    \end{equation}
+    Since partial derivatives commute, i.e., \(\frac{\partial g_{il}}{\partial x^j} = \frac{\partial g_{li}}{\partial x^j}\) and \(\frac{\partial g_{jl}}{\partial x^i} = \frac{\partial g_{lj}}{\partial x^i}\), the terms inside the parentheses are equal. Therefore, we have \(\Gamma_{ij}^k = \Gamma_{ji}^k\), proving the symmetry property.
+\end{proof}
+Something that is really important is the index raising and lowering property of Christoffel symbols. It allows us to manipulate tensor components and relate them in different index configurations, which is crucial for various geometric and physical applications.
+
+By utilizing the index raising and lowering property, we can simplify calculations, express tensors in a more convenient form, and analyze their transformation properties under coordinate changes. This property plays a key role in the formulation of the Einstein field equations in general relativity and in studying the geometric properties of curved spacetime.</p>
+</body>
